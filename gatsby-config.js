@@ -3,6 +3,9 @@ module.exports = {
     title: 'Gatsby Default Starter',
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-emotion',
+    },
     'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-manifest',
