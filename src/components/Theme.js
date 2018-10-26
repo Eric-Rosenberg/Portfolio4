@@ -15,6 +15,7 @@ const theme = {
   lightPrimary: '#C5CAE9',
   textPrimary: '#FFFFFF',
   textSecondary: '#757575',
+  complimentary: '#b5763f',
 };
 
 const ColorContext = React.createContext({ ...theme });

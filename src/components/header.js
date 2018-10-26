@@ -20,12 +20,12 @@ const Header = () => (
               color: ${colors.textPrimary};
               text-decoration: none;
               &:hover {
-                color: ${colors.textSecondary};
+                color: ${colors.complimentary};
               }
             `}
           >
             <Spring config={{ duration: 1000 }} from={{ opacity: 0 }} to={{ opacity: 1 }}>
-              {props => <span style={props}>Eric Rosenberg</span>}
+              {props => <span style={props}>E R I C</span>}
             </Spring>
           </Link>
         </h1>

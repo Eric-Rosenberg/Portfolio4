@@ -1,14 +1,13 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import Layout from '../components/layout';
 
 const IndexPage = () => (
   <Layout>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div css="height: calc(100vh - 8rem); display: flex; flex-direction: column; align-items: center; justify-content: center">
+      <h1>Hi people</h1>
+      <p>Welcome to your new Gatsby site.</p>
+      <p>Now go build something great.</p>
+    </div>
   </Layout>
 );
 

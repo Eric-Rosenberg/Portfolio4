@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Lato');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Dosis');
 
 html {
   font-family: 'Raleway', sans-serif;
-  background: #FFFFFF;
+  
+  background: #005AA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Lato', sans-serif
+  font-family: 'Dosis', sans-serif
+}
+
+html, body, #app, #app>div {
+  height: 100%
 }
