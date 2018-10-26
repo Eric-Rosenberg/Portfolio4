@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import 'normalize.css';
 import Particles from 'react-particles-js';
+import { isBrowser } from 'react-device-detect';
 import Header from './header';
 import './layout.css';
 
@@ -150,12 +151,17 @@ const Layout = ({ children }) => (
           }}
         >
           {children}
-          <Particles
-            params={particleParams}
-            style={{
-              position: 'fixed', zIndex: -1, top: 0, left: 0,
-            }}
-          />
+          {isBrowser && (
+            <Particles
+              params={particleParams}
+              style={{
+                position: 'fixed',
+                zIndex: -1,
+                top: 0,
+                left: 0,
+              }}
+            />
+          )}
         </div>
       </div>
     )}
